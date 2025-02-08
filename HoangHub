@@ -96,7 +96,7 @@ local v7 = CreateObject("ImageLabel", {
     Name = "UserImage",
     Parent = v6,
     BackgroundTransparency = 1,
-    Image = "rbxassetid://77977931068903",
+    Image = "rbxassetid://116264958159625",
     Position = UDim2.new(0, 15, 0, 10),
     Size = UDim2.new(0, 50, 0, 50)
 });
@@ -106,7 +106,7 @@ local v8 = CreateObject("TextLabel", {
     Parent = v6,
     BackgroundTransparency = 1,
     Text = "Youtube: Việt Hoàng iOS",
-    Position = UDim2.new(0, 200, 0,10),
+    Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 200),
     Font = Enum.Font.GothamBold,
     TextColor3 = v2.LoaderData.Colors.Title,
@@ -2611,7 +2611,7 @@ function to(v233)
                 repeat
                     wait(_G.Fast_Delay);
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v233;
-                    wait(0.05);
+                    wait(0.01);
                     game.Players.LocalPlayer.Character.Head:Destroy();
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v233;
                 until ((v233.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 2500) and (game.Players.LocalPlayer.Character.Humanoid.Health > 0)
@@ -2633,7 +2633,7 @@ v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
 v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=77977931068903";
+v23.Image = "http://www.roblox.com/asset/?id=116264958159625";
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
 v25.Parent = v23;
