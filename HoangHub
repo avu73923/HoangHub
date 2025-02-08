@@ -25,7 +25,7 @@ local v2 = {
         Name = shared.LoaderTitle or "A Loader",
         Colors = shared.LoaderColors or {
             Main = Color3.fromRGB(0, 0, 0),
-            Topic = Color3.fromRGB(100, 100, 100),
+            Topic = Color3.fromRGB(200, 200, 200),
             Title = Color3.fromRGB(255, 255, 255),
             LoaderBackground = Color3.fromRGB(40, 40, 40),
             LoaderSplash = Color3.fromRGB(3, 252, 3)
@@ -98,7 +98,7 @@ local v7 = CreateObject("ImageLabel", {
     BackgroundTransparency = 1,
     Image = "rbxassetid://77977931068903",
     Position = UDim2.new(0, 15, 0, 10),
-    Size = UDim2.new(0, 200, 0, 200)
+    Size = UDim2.new(0, 50, 0, 50)
 });
 v4(25, v7);
 local v8 = CreateObject("TextLabel", {
@@ -106,7 +106,7 @@ local v8 = CreateObject("TextLabel", {
     Parent = v6,
     BackgroundTransparency = 1,
     Text = "Youtube: Việt Hoàng iOS",
-    Position = UDim2.new(0, 75, 0, 10),
+    Position = UDim2.new(0, 200, 0, 75),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
     TextColor3 = v2.LoaderData.Colors.Title,
