@@ -5,7 +5,7 @@ local MyLevel, CFrameQuest, CFrameMon, Mon, NameMon, NameQuest, LevelQuest
 
 
 local Vector2,CFrame,Instance,UDim2=Vector2,CFrame,Instance,UDim2 -- yes this will barely add performance but ya
-local _25msShared={} -- getgenv = Có con cặc
+local _25msShared={} -- getgenv = 
 if getgenv().CokkaRan then
 	warn("ALREADY OPEN")
 	return
