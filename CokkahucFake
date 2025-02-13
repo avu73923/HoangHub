@@ -1309,22 +1309,22 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 MethodFarm = CFrame.new(0, 10, 10)
 local L_35_ = {
-	Main = L_34_:Tab("Main Farm"),
-	Setting = L_34_:Tab("Settings"),
-	Dragon = L_34_:Tab("Dragon Dojo"),
-	Status = L_34_:Tab("Status"),
-	SeaEvent = L_34_:Tab("Sea Events"),
-	Kitsune = L_34_:Tab("Kitsune Island"),
-	QuestItem = L_34_:Tab("Quest & Item"),
-	PVP = L_34_:Tab("PVP Combat"),
-	Teleport = L_34_:Tab("Teleport"),
-	ESP = L_34_:Tab("Esp & Stats"),
-	Raid = L_34_:Tab("Raid"),
-	DevilFruit = L_34_:Tab("Devil Fruit"),
-	Misc = L_34_:Tab("Misc"),
-	Mirage = L_34_:Tab("Mirage Island"),
-	RaceV4 = L_34_:Tab("Race V4"),
-	Info = L_34_:Tab("Update Info")
+	Main = L_34_:Tab("Trang trại chính"),
+	Setting = L_34_:Tab("Cài đặt"),
+	Dragon = L_34_:Tab("Võ đường rồng"),
+	Status = L_34_:Tab("Trạng thái"),
+	SeaEvent = L_34_:Tab("Sự kiện biển"),
+	Kitsune = L_34_:Tab("Đảo kitsune"),
+	QuestItem = L_34_:Tab("Nhiệm vụ và vật phẩm"),
+	PVP = L_34_:Tab("Chiến đấu PVP"),
+	Teleport = L_34_:Tab("Dịch chuyển"),
+	ESP = L_34_:Tab("Esp & Thống kê"),
+	Raid = L_34_:Tab("Tập kích"),
+	DevilFruit = L_34_:Tab("Trái ác quỷ"),
+	Misc = L_34_:Tab("Linh tinh"),
+	Mirage = L_34_:Tab("Đảo ảo ảnh"),
+	RaceV4 = L_34_:Tab("Cuộc đua V4"),
+	Info = L_34_:Tab("Cập nhật thông tin")
 }
 L_35_.Main:Label("Select Weapon")
 local L_36_ = {
