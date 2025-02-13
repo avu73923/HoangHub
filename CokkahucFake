@@ -5,7 +5,7 @@ local MyLevel, CFrameQuest, CFrameMon, Mon, NameMon, NameQuest, LevelQuest
 
 
 local Vector2,CFrame,Instance,UDim2=Vector2,CFrame,Instance,UDim2 -- yes this will barely add performance but ya
-local _25msShared={} -- getgenv = bad and it crashes on second execution anyways :3
+local _25msShared={} -- getgenv = Có con cặc
 if getgenv().CokkaRan then
 	warn("ALREADY OPEN")
 	return
@@ -1376,8 +1376,8 @@ task.spawn(function()
 		end)
 	end
 end)
-L_35_.Main:Label("Auto Farm")
-L_35_.Main:Toggle("Auto Farm Level", _25msShared.AutoFarmLevel, function(L_177_arg0)
+L_35_.Main:Label("Tự động")
+L_35_.Main:Toggle("Tự động lên cấp", _25msShared.AutoFarmLevel, function(L_177_arg0)
 	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
 	_25msShared.AutoFarmLevel = L_177_arg0;
 	StopTween(_25msShared.AutoFarmLevel)
@@ -1435,7 +1435,7 @@ spawn(function()
 		end)
 	end
 end)
-L_35_.Main:Toggle("Nearest Mob", _25msShared.NeareastFarm, function(L_181_arg0)
+L_35_.Main:Toggle("Fram kẻ địch gần", _25msShared.NeareastFarm, function(L_181_arg0)
 	_25msShared.NeareastFarm = L_181_arg0;
 	StopTween(_25msShared.NeareastFarm)
 end)
@@ -1462,8 +1462,8 @@ spawn(function()
 		end
 	end
 end)
-L_35_.Main:Label("Katakuri & Bone")
-L_35_.Main:Toggle("Auto Katakuri", _25msShared.AutoDoughBoss, function(L_184_arg0)
+L_35_.Main:Label("Katakuri và Xương")
+L_35_.Main:Toggle("Tự động katakuri", _25msShared.AutoDoughBoss, function(L_184_arg0)
 	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
 	_25msShared.AutoDoughBoss = L_184_arg0;
 	StopTween(_25msShared.AutoDoughBoss)
@@ -1586,7 +1586,7 @@ spawn(function()
 		end)
 	end
 end)
-L_35_.Main:Toggle("Trade Bone", _25msShared.RandomBone, function(L_194_arg0)
+L_35_.Main:Toggle("Buôn bán xương", _25msShared.RandomBone, function(L_194_arg0)
 	_25msShared.RandomBone = L_194_arg0
 end)
 spawn(function()
@@ -1598,20 +1598,20 @@ spawn(function()
 		end
 	end)
 end)
-L_35_.Main:Label("Mastery")
+L_35_.Main:Label("Thông thạo")
 _25msShared.Kill_At = 33;
 _25msShared.MasteryType = "Quest"
 L_35_.Main:Slider("Kill %", 1, 100, 33, function(L_195_arg0)
 	_25msShared.Kill_At = L_195_arg0
 end)
 L_35_.Main:Dropdown("Select Mode", {
-	"Quest",
-	"Nearest"
+	"Nhiệm vụ",
+	"Gần nhất"
 }, "Quest", function(L_196_arg0)
 	_25msShared.MasteryType = L_196_arg0
 end)
 L_35_.Main:Label("Hi")
-L_35_.Main:Toggle("Auto Farm Fruit Mastery", _25msShared.AutoFarmFruitMastery, function(L_197_arg0)
+L_35_.Main:Toggle("Tự động fram thông thạo trái", _25msShared.AutoFarmFruitMastery, function(L_197_arg0)
 	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
 	_25msShared.AutoFarmFruitMastery = L_197_arg0;
 	StopTween(_25msShared.AutoFarmFruitMastery)
