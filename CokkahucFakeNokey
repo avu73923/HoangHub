@@ -2084,7 +2084,7 @@ spawn(function()
 		end
 	end
 end)
-L_35_.Setting:Toggle("Đánh nhanh (Smooth)", true, function(L_249_arg0)
+L_35_.Setting:Toggle("Đánh nhanh", true, function(L_249_arg0)
 	_25msShared.FastAttack = L_249_arg0
 end)
 L_35_.Setting:Toggle("Bỏ qua TP", false, function(L_250_arg0)
