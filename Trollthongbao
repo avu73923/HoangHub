@@ -1,0 +1,7 @@
+require(game.ReplicatedStorage:WaitForChild("Notification")).new(
+            " <Color=YELLOW><THÔNG BÁO TỪ NHÂN VIÊN><Color=/> "
+        ):Display()
+
+require(game.ReplicatedStorage:WaitForChild("Notification")).new(
+            " <Color=YELLOW>Bạn đã trở thành admin Blox fruits!<Color=/> "
+        ):Display()
