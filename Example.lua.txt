@@ -23,26 +23,26 @@ local Tab2 = FlurioreGui:CreateTab({
 	["Name"] = "Setting",
 	["Icon"] = "rbxassetid://7734053495"
 })
-local Section = Tab1:AddSection("Setting Farm")
-local Paragraph = Section:AddParagraph({
-	["Title"] = "Paragraph",
-	["Content"] = "This is a Paragraph"
-})
-Paragraph:Set({
-	["Title"] = "Paragraph",
-	["Content"] = "This is a Paragraph"
-})
+
 local Toggle = Section:AddToggle({
-	["Title"]= "Toggle",
-	["Content"] = "This is a Toggle",
+	["Title"]= "Auto Grap",
+	["Content"] = "Auto Grap",
 	["Default"] = false,
 	["Multi"] = true,
 	["Options"] = {"Option 1", "Option 2"},
 	["Selecting"] = {"Option 1"},
 	["Callback"] = function(Value) 
 		print(Value)
-	end
-})
+while true do
+local args = {
+    [1] = false,
+    [2] = false
+}
+
+game:GetService("Players").LocalPlayer.Character.Events.Grab:FireServer(unpack(args))
+wait(0.5)
+end
+
 Toggle:Set(false)
 print(Toggle.Value)
 local Button = Section:AddButton({
