@@ -1,6 +1,6 @@
 local FlurioreFixLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/daucobonhi/Ui-FlurioreLib/refs/heads/main/FlurioreLibFix.lua"))()
 local Notify = FlurioreFixLib:MakeNotify({
-	["Title"] = "Fluriore UI",
+	["Title"] = "Viethoangios",
 	["Description"] = "Notification",
 	["Color"] = Color3.fromRGB(255, 0, 255),
 	["Content"] = "Welcome to Fluriore UI",
@@ -8,8 +8,8 @@ local Notify = FlurioreFixLib:MakeNotify({
 	["Delay"] = 10
 })
 local FlurioreGui = FlurioreFixLib:MakeGui({
-	["NameHub"] = "Fluriore UI",
-	["Description"] = "Fix By Dragon Toro",
+	["NameHub"] = "eat the world",
+	["Description"] = "By Viethoangios",
 	["Color"] = Color3.fromRGB(255, 0, 255),
 	["Logo Player"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game:GetService("Players").LocalPlayer.UserId .."&width=420&height=420&format=png",
 	["Name Player"] = tostring(game:GetService("Players").LocalPlayer.Name),
