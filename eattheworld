@@ -1,25 +1,29 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
+ Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
-local Window = OrionLib:MakeWindow({Name = "eat the word", HidePremium = false, SaveConfig = true, ConfigFolder = "Việt Hoàng ios"})
-
-OrionLib:MakeNotification({
-	Name = "Việt Hoàng ios",
-	Content = "",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+local Window = Fluent:CreateWindow({
+    Title = "Eat The World" .. Fluent.Version,
+    SubTitle = "by viethoangios",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
-local MainTab = Window:MakeTab({
-	Name = "Auto Grap & eat",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+--Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
 
-MainTab:AddToggle({
-	Name = "This is a toggle!",
-	Default = false,
-	Callback = function(Value)
-		print(Value)
+local Toggle = {
+Tabs.Main:AddToggle("Auto grap & eat", {Title = "Toggle", Default = false })
+
+    Toggle:OnChanged(function()
+        print("Toggle changed:", Options.MyToggle.Value)
+    end)
 
 while true do
 
@@ -33,6 +37,5 @@ game:GetService("Players").LocalPlayer.Character.Events.Grab:FireServer(unpack(a
 game:GetService("Players").LocalPlayer.Character.Events.Eat:FireServer()
 wait(1)
 end
-})
+}
 
-OrionLib:Init()
