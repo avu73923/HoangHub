@@ -88,6 +88,7 @@ toggleButton.MouseButton1Click:Connect(function()
 end)
 
 -- Tạo các tab
+local InfoTab = Window:AddTab({ Title = "Thông tin", Icon = "" }) -- Tab Thông tin
 local MainTab = Window:AddTab({ Title = "Main", Icon = "" })
 local PlayerTab = Window:AddTab({ Title = "Player", Icon = "" })
 local IslandTab = Window:AddTab({ Title = "Đảo 🏝️", Icon = "" })
@@ -863,6 +864,21 @@ local function setRockDestruction(enabled)
     end
 end
 
+
+-- Tab Info
+InfoTab:AddToggle("https://youtube.com/@viethoangios", {
+    Title = "YouTube",
+      end
+   end
+end
+})
+
+InfoTab:AddToggle("https://discord.gg/3grsKqfD", {
+    Title = "Discore",
+      end
+   end
+end
+})
 
 -- Tab Main
 MainTab:AddToggle("LevithanToggle", {
