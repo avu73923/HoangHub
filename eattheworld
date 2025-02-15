@@ -34,3 +34,5 @@ game:GetService("Players").LocalPlayer.Character.Events.Eat:FireServer()
 wait(1)
 end
 })
+
+OrionLib:Init()
